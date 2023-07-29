@@ -1,0 +1,102 @@
+{
+    "access_token": "zJed3z2QqVWj2HY",
+    "model_version": "plant_id:3.1.1",
+    "custom_id": null,
+    "input": {
+        "latitude": null,
+        "longitude": null,
+        "health": "all",
+        "images": [
+            "http://plant.id/media/imgs/63f29c4ad0b8494fb4e5548e4fedd050.jpg"
+        ],
+        "datetime": "2023-07-29T12:51:34.058891+00:00"
+    },
+    "result": {
+        "is_plant": {
+            "probability": 0.9999974,
+            "binary": true,
+            "threshold": 0.5
+        },
+        "is_healthy": {
+            "probability": 0.37365108728408813,
+            "binary": false,
+            "threshold": 0.63
+        },
+        "classification": {
+            "suggestions": [
+                {
+                    "id": "4d4fea0088185abc",
+                    "name": "Dracaena reflexa",
+                    "probability": 0.9769673388671053,
+                    "details": {
+                        "language": "en",
+                        "entity_id": "4d4fea0088185abc"
+                    }
+                },
+                {
+                    "id": "2ae5b4ae403b8017",
+                    "name": "Beaucarnea",
+                    "probability": 0.02303266113289467,
+                    "details": {
+                        "language": "en",
+                        "entity_id": "2ae5b4ae403b8017"
+                    }
+                }
+            ]
+        },
+        "disease": {
+            "suggestions": [
+                {
+                    "id": "e5eed7f688efa59e",
+                    "name": "water excess or uneven watering",
+                    "probability": 0.5148459,
+                    "details": {
+                        "language": "en",
+                        "entity_id": "e5eed7f688efa59e"
+                    }
+                },
+                {
+                    "id": "c6fbc333b227bd54",
+                    "name": "water deficiency",
+                    "probability": 0.39020938,
+                    "details": {
+                        "language": "en",
+                        "entity_id": "c6fbc333b227bd54"
+                    }
+                },
+                {
+                    "id": "765b06482c4e4ae9",
+                    "name": "nutrient deficiency",
+                    "probability": 0.26126695,
+                    "details": {
+                        "language": "en",
+                        "entity_id": "765b06482c4e4ae9"
+                    }
+                },
+                {
+                    "id": "d24ebab7c0155e4b",
+                    "name": "Animalia",
+                    "probability": 0.16282825,
+                    "details": {
+                        "language": "en",
+                        "entity_id": "d24ebab7c0155e4b"
+                    }
+                },
+                {
+                    "id": "af7b78782de52bd8",
+                    "name": "senescence",
+                    "probability": 0.15520827,
+                    "details": {
+                        "language": "en",
+                        "entity_id": "af7b78782de52bd8"
+                    }
+                }
+            ]
+        }
+    },
+    "status": "COMPLETED",
+    "sla_compliant_client": true,
+    "sla_compliant_system": true,
+    "created": 1690635094.058891,
+    "completed": 1690635094.463193
+}
