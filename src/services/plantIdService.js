@@ -43,7 +43,8 @@ const PlantIdService = {
     };
     const headers = {
       "Content-Type": "application/json",
-      "Api-Key": "vIa4CFTIOokH9zHmXzETGgLe7RHBPIDjW3N7xlmGz36ibB6TP3",
+      // get from .env file
+      "Api-Key": "bJqxVawVK1OQwge30KwPtoUTea79woOu574GMeR6yQUt8jRCus",
     };
     return new Promise((resolve, reject) => {
       service

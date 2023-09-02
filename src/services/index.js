@@ -1,5 +1,6 @@
 import axios from "axios";
 import { message } from "ant-design-vue";
+import { UsePlantIDStore } from "../store/plantId";
 
 const service = axios.create({
   baseURL: "https://plant.id/api/v3",
@@ -18,4 +19,14 @@ service.interceptors.response.use((response) => {
   return response;
 });
 
+// set loading true before request is sent and false after response is received or error
+service.interceptors.request.use((config) => {
+  UsePlantIDStore().set_loading(true);
+  return config;
+});
+
+service.interceptors.response.use((response) => {
+  UsePlantIDStore().set_loading(false);
+  return response;
+});
 export default service;

@@ -2,11 +2,13 @@ import { defineStore } from "pinia";
 import PlantIdService from "../services/plantIdService.js";
 // import router from "../router/index.js";
 import router from "@/router/index.js";
+
 export const UsePlantIDStore = defineStore("plantId", {
   //state
   state: () => ({
     collapsed: false,
     response_images: {},
+    is_loading: false,
   }),
   // getters
   getters: {
@@ -23,6 +25,10 @@ export const UsePlantIDStore = defineStore("plantId", {
       //set to localstorage
       this.collapsed = !this.collapsed;
       localStorage.setItem("collapsed", !this.collapsed);
+    },
+
+    set_loading(value) {
+      this.is_loading = value;
     },
 
     async UploadImage(fileList) {
